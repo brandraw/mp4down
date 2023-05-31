@@ -1,0 +1,113 @@
+body {
+    background-color: white;
+}
+
+nav.navbar {
+    background-color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #ecf0f1;
+}
+
+footer.footer {
+    background-color: #ecf0f1;
+    padding: 2rem;
+}
+
+
+.downloader-wrapper .input-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 700px;
+    margin: auto;
+}
+
+.downloader-wrapper .input-wrapper input:focus {
+    outline: unset;
+}
+
+.downloader-wrapper .input-wrapper input {
+    border: 2px solid #2c3e50;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.downloader-wrapper .input-wrapper button {
+    padding: 1.5rem;
+    border: 0;
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.downloader-wrapper .input-wrapper button:hover {
+    background-color: #1a242f;
+}
+
+.faq-wrapper .card-header,
+.updates-wrapper .card-header {
+    color: white;
+}
+
+.faq-wrapper .card-header {
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    font-size: 20px;
+}
+
+.updates-wrapper .card-header {
+    background-color: #2c3e50;
+    border: 1px solid #2c3e50;
+    font-size: 20px;
+}
+
+.faq-wrapper .card-body {
+    border: 1px solid #3498db;
+}
+
+.updates-wrapper .card-body {
+    border: 1px solid #2c3e50;
+}
+
+.updates-wrapper .card-body,
+.faq-wrapper .card-body {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.update-card strong {
+    color: #1a242f;
+    font-weight: bolder;
+}
+
+.update-card {
+    padding: 1.5rem;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.bg-green {
+    background-color: #18bc9c;
+}
+
+.bg-blue {
+    background-color: #3498db;
+}
+
+.downloader-results-wrapper {
+    max-width: 900px;
+    background: white;
+    padding: 1.5rem;
+    margin: 2rem auto;
+
+}
