@@ -93,13 +93,15 @@ downloadBtn.click(() => {
                     <div class=''><h5>Recommeded:</h5>`;
 
         data += res.streaming_data.formats.map((v, k) => {
-            return `<form action="/youtube/download-video" method="POST">
-                        <input type="hidden" value="${$('meta[name="csrf_token"]').attr('content')}" name="_token">
-                        <input type="hidden" value="${v.url}" name="url">
-                        <input type="hidden" value="${all_mimes[v.mimeType.split(';')[0]]}" name="ext">
-                        <input type="hidden" value="${res.video_details.title}" name="filename">
-                        <button submit class="btn-success m-1 btn btn-large">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</button>
-                    </form>`
+            return `<a download class="btn-success m-1 btn btn-large" target="_blank"  href="${v.url}">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</a>
+            `
+            // <form action="/youtube/download-video" method="POST">
+            //             <input type="hidden" value="${$('meta[name="csrf_token"]').attr('content')}" name="_token">
+            //             <input type="hidden" value="${v.url}" name="url">
+            //             <input type="hidden" value="${all_mimes[v.mimeType.split(';')[0]]}" name="ext">
+            //             <input type="hidden" value="${res.video_details.title}" name="filename">
+            //             <button submit class="btn-success m-1 btn btn-large">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</button>
+            //         </form>
         }).join('');
         data += `<div class=''>
             <div class="accordion" id="accordionDownload">
@@ -114,13 +116,15 @@ downloadBtn.click(() => {
                             <div class="accordion-body">
                     `
         data += res.streaming_data.adaptiveFormats.map((v, k) => {
-            return `<form action="/youtube/download-video" method="POST">
-                        <input type="hidden" value="${$('meta[name="csrf_token"]').attr('content')}" name="_token">
-                        <input type="hidden" value="${v.url}" name="url">
-                        <input type="hidden" value="${all_mimes[v.mimeType.split(';')[0]]}" name="ext">
-                        <input type="hidden" value="${res.video_details.title}" name="filename">
-                        <button submit class="btn-success m-1 btn btn-large">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</button>
-                    </form>`
+            return `<a download  class="btn-success m-1 btn btn-large" target="_blank" href="${v.url}">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</a>
+            `
+            // <form action="/youtube/download-video" method="POST">
+            //             <input type="hidden" value="${$('meta[name="csrf_token"]').attr('content')}" name="_token">
+            //             <input type="hidden" value="${v.url}" name="url">
+            //             <input type="hidden" value="${all_mimes[v.mimeType.split(';')[0]]}" name="ext">
+            //             <input type="hidden" value="${res.video_details.title}" name="filename">
+            //             <button submit class="btn-success m-1 btn btn-large">Download ${v.mimeType.split(";")[0].split('/')[0]} (${(v.mimeType.split(';')[0].split('/')[0] == 'video') ? v.qualityLabel : v.audioQuality}) (${all_mimes[v.mimeType.split(';')[0]]})</button>
+            //         </form>
         }).join('');
         data += `               </div>
                             </div>
