@@ -22,7 +22,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
     Route::get('/', [FacebookController::class, 'index'])->name('home');
 
-    Route::get('/pages/{title}', [MainController::class, 'pages']);
+    Route::get('/{title}', [MainController::class, 'pages']);
 
     Route::prefix('facebook')->as('facebook.')->controller(FacebookController::class)->group(function () {
         Route::get('/', 'index')->name('index');

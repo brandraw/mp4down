@@ -3,7 +3,7 @@ body {
 }
 
 nav.navbar {
-    background-color: #2c3e50;
+    background-color: #032d55;
     font-size: 20px;
     font-weight: bold;
 }
@@ -30,12 +30,19 @@ footer.footer {
 }
 
 .downloader-wrapper .input-wrapper input {
-    border: 2px solid #2c3e50;
+    border: 2px solid #bdbdbd;
+    border-right: none;
     border-radius: 5px 0 0 5px;
     width: 100%;
     padding: 10px;
     font-weight: bolder;
     font-size: 20px;
+    transition: border 0.3s;
+}
+
+.downloader-wrapper .input-wrapper input:focus {
+    border: 2px solid #2c3e50;
+    border-right: none;
 }
 
 .downloader-wrapper .input-wrapper button {
@@ -47,6 +54,7 @@ footer.footer {
     border-radius: 0 5px 5px 0;
     display: flex;
     flex-wrap: nowrap;
+    transition: 0.3s;
 }
 
 .downloader-wrapper .input-wrapper button:hover {
@@ -85,23 +93,31 @@ footer.footer {
 }
 
 .update-card strong {
-    color: #1a242f;
+    color: #000000;
     font-weight: bolder;
 }
 
 .update-card {
     padding: 1.5rem;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     margin: 10px 0;
 }
 
 .bg-green {
-    background-color: #18bc9c;
+    background-color: #ddffed;
 }
 
 .bg-blue {
-    background-color: #3498db;
+    background-color: #e0f3ff;
+}
+
+.bg-orange {
+    background-color: #ffebd2;
+}
+
+.bg-yellow {
+    background-color: #fffac4;
 }
 
 .downloader-results-wrapper {

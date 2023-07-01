@@ -16,7 +16,7 @@
             $("[data-toggle='tooltip']").tooltip();
         });
     </script>
-    <title>{{ $title ?? 'Home' . ' | ' . env('APP_NAME', 'Video Downloader') }}</title>
+    <title>{{ env('APP_NAME', 'MP4DOWN') }}</title>
 
     @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
 
@@ -36,13 +36,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">{{ __('Home') }}</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            {{ __('More Downloaders') }}
+                            {{ __('More') }}
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{{ route('youtube.index') }}">{{ __('Youtube Downloader') }}</a></li>
@@ -90,9 +87,9 @@
             </div>
             <div class="fw-bolder text-center">
                 {!! __(
-                    ":app_name is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms, Inc. <a href='javascript:void(0);'>Read the full Disclaimer</a>",
+                    ":app_name is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms.",
                     ['app_name' => __(env('APP_NAME'))],
-                ) !!}.
+                ) !!}
             </div>
         </footer>
         {{-- Footer:END --}}
