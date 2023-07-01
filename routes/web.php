@@ -20,7 +20,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
-    Route::get('/', [MainController::class, 'index'])->name('home');
+    Route::get('/', [FacebookController::class, 'index'])->name('home');
 
     Route::get('/pages/{title}', [MainController::class, 'pages']);
 

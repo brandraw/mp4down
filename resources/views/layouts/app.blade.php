@@ -90,7 +90,7 @@
             </div>
             <div class="fw-bolder text-center">
                 {!! __(
-                    ":app_name (formerly FBDOWN) is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms, Inc. <a href='javascript:void(0);'>Read the full Disclaimer</a>",
+                    ":app_name is a Social Media Services website and is not associated by any means to Facebook or the Facebook brand and doesn't have anything to do with Meta Platforms, Inc. <a href='javascript:void(0);'>Read the full Disclaimer</a>",
                     ['app_name' => __(env('APP_NAME'))],
                 ) !!}.
             </div>
