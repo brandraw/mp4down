@@ -49,7 +49,7 @@
                     </li> -->
 
                 </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,7 +69,7 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </nav>
