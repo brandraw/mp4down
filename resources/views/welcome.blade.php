@@ -73,7 +73,7 @@
             <div class="col-md-6 faq-wrapper">
                 <div class="card">
                     <div class="card-header"><i class="bi bi-patch-question-fill"></i>
-                        {{ __('Frequently Asked Questionsㄴㅇㅁㅁㅇㄴㄴㄴㅁ') }}
+                        {{ __('Frequently Asked Questions') }}
                     </div>
                     <div class="card-body">
                         <div class="accordion" id="accordionExample">
