@@ -18,6 +18,15 @@
     </script>
     <!-- <title>{{ env('APP_NAME', 'MP4DOWN') }}</title> -->
     <title>MP4DOWN</title>
+    <meta name="description" content="Fast, easy and convenient Facebook reels downloader">
+    <link rel="icon" type="image/x-icon" href="assets/images/mp4down-favicon.ico">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://example.com/page.html"> -->
+    <meta property="og:title" content="MP4DOWN">
+    <meta property="og:image" content="assets/images/mp4down-og.png">
+    <meta property="og:description" content="Fast, easy and convenient Facebook reels downloader">
+    <meta property="og:site_name" content="MP4DOWN">
+    <meta property="og:locale" content="en_US">
 
     @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
 
