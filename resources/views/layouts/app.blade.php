@@ -16,7 +16,8 @@
             $("[data-toggle='tooltip']").tooltip();
         });
     </script>
-    <title>{{ env('APP_NAME', 'MP4DOWN') }}</title>
+    <!-- <title>{{ env('APP_NAME', 'MP4DOWN') }}</title> -->
+    <title>MP4DOWN</title>
 
     @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
 
