@@ -36,7 +36,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             {{ __('More') }}
@@ -45,7 +45,7 @@
                             <li><a class="dropdown-item" href="{{ route('youtube.index') }}">{{ __('Youtube Downloader') }}</a></li>
                             <li><a class="dropdown-item" href="{{ route('facebook.index') }}">{{ __('Facebook Downloader') }}</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -74,7 +74,7 @@
     </nav>
 
     @yield('content')
-    <div class="container">
+    <!-- <div class="container">
 
         {{-- Footer:BEGIN --}}
         <footer class="footer">
@@ -93,8 +93,19 @@
             </div>
         </footer>
         {{-- Footer:END --}}
-    </div>
+    </div> -->
 
+    <div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary black-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary black-link">About</a></li>
+      <li class="nav-item"><a href="/terms-of-use" class="nav-link px-2 text-body-secondary black-link">Terms of Use</a></li>
+      <li class="nav-item"><a href="/privacy-policy" class="nav-link px-2 text-body-secondary black-link">Privacy Policy</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">&copy;2023 MP4DOWN, Inc. All rights reserved.</p>
+  </footer>
+</div>
 
     @stack('scripts')
 </body>

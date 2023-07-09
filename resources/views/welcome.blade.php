@@ -6,7 +6,7 @@
             <img src="{{ asset('assets/logo/logo-dark.png') }}" width="300px" alt="{{ __(env('APP_NAME')) }}">
         </div>
         <div class="text-center py-2">
-            <h4 class="fw-bolder">{{ __(':downloader Video downloader', ['downloader' => $downloader_name]) }}</h4>
+            <h4 class="fw-bolder">{{ __(':downloader Video download Fast', ['downloader' => $downloader_name]) }}</h4>
             <span class="text-muted">{{ __('Download :downloader Video online', ['downloader' => $downloader_name]) }}</h4>
         </div>
 
@@ -23,6 +23,39 @@
         </div>
 
     </div>
+
+    <div class="container py-5" id="custom-cards">
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1501290301209-7a0323622985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="background-color: rgba(0,0,0,0.4);">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Quick Download</h3>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1" style="background-color: rgba(0,0,0,0.4);">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ultimate convenience</h3>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1578346693440-3dcedf4b7b81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1" style="background-color: rgba(0,0,0,0.4);">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Easy to download</h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="container my-5">
         <div class="row">
             <div class="col-md-6 updates-wrapper">
@@ -40,7 +73,7 @@
             <div class="col-md-6 faq-wrapper">
                 <div class="card">
                     <div class="card-header"><i class="bi bi-patch-question-fill"></i>
-                        {{ __('Frequently Asked Questions') }}
+                        {{ __('Frequently Asked Questionsㄴㅇㅁㅁㅇㄴㄴㄴㅁ') }}
                     </div>
                     <div class="card-body">
                         <div class="accordion" id="accordionExample">
