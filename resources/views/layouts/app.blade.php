@@ -16,6 +16,8 @@
             $("[data-toggle='tooltip']").tooltip();
         });
     </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5444717331936789"
+     crossorigin="anonymous"></script>
     <!-- <title>{{ env('APP_NAME', 'MP4DOWN') }}</title> -->
     <title>MP4DOWN</title>
     <meta name="description" content="Fast, easy and convenient Facebook reels downloader">
