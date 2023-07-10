@@ -19,6 +19,7 @@
     <!-- <title>{{ env('APP_NAME', 'MP4DOWN') }}</title> -->
     <title>MP4DOWN</title>
     <meta name="description" content="Fast, easy and convenient Facebook reels downloader">
+    <meta name="keywords" content="facebook, reels, facebook download, reels download, reels down">
     <link rel="icon" type="image/x-icon" href="assets/images/mp4down-favicon.ico">
     <meta property="og:type" content="website">
     <!-- <meta property="og:url" content="https://example.com/page.html"> -->
